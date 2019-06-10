@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import CharactersList from './components/CharactersList';
 
 class App extends Component {
   constructor() {
@@ -29,10 +30,23 @@ class App extends Component {
       });
   };
 
+  showHomeworld = event => {
+    event.preventDefault();
+    const starwarsChars = this.state.starwarsChars;
+    starwarsChars.map( char => {
+      return char.isclicked = false;
+    })
+    this.setState( { starwarsChars } )
+    console.log(this.state.starwarsChars.isclicked)
+
+  }
+
   render() {
+    console.log(this.state.starwarsChars)
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <CharactersList charlist={this.state} homeworld={this.showHomeworld} />
       </div>
     );
   }

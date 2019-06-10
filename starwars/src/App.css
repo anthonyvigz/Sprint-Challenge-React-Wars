@@ -6,3 +6,27 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+.characters {
+    background: black;
+    color: yellow;
+    font-size: 2em;
+    padding: 10px 25px;
+    width: 75%;
+    margin: 20px auto;
+    font-family: 'Press Start 2P', cursive;
+    border-radius: 10px;
+}
+
+.mass {
+    background: black;
+    color: lightblue;
+    font-size: 1em;
+    padding: 10px 25px;
+    width: 25%;
+    margin: 20px auto;
+    font-family: 'Press Start 2P', cursive;
+    border-radius: 10px;
+}
